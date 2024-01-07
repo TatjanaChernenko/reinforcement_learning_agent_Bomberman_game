@@ -1,0 +1,11 @@
+PER: True, Target: True, Model: DUELCONVSYM, State: ALLOHL, LoadModel: False, Use Two e: True, Force: True
+Gamma: 0.97, Learning Rate: 4e-05, LR_decay: 1/99999, e: 0, e_min: 0, e_decay: 1/-500000
+e_bomb: 0, e_bomb_min: 0, e_bomb_decay: 1/-500000
+Batch_size: 32, Batch_times: 0, Update Target every: 400, Start_after: 0, Train every: 4
+Random after Osc: 3, Random after Wait: 3, Diamond: (4, 4), No Wait on Bomb: False, No Wait in Bomb range: False, No Impossible: True
+Use Projected state: True
+PER size: 80000, PER_max: 100.0, PER_e: 1.0, PER_a: 0.6, PER_b: 0.4, PER_b_inc: 0.6/400000.0
+Rewards: [    0     0     0     0     0     0   -50     0     0   100     0  1000
+  5000 -1000 -2000  3000     0     0], Useless: (-100, -50, -100, -100)
+Probabilities: [10 10 10 10  2  4]
+Settings(width=1000, height=600, gui=False, fps=15, update_interval=0.1, turn_based=False, n_rounds=100000, save_replay=False, make_video_from_replay=False, cols=17, rows=17, grid_size=30, crate_density=0, actions=['UP', 'DOWN', 'LEFT', 'RIGHT', 'BOMB', 'WAIT'], max_agents=4, max_steps=400, stop_if_not_training=False, bomb_power=3, bomb_timer=4, explosion_timer=2, stop_when_bombs_present=True, timeout=5.0, reward_kill=5, reward_coin=1, reward_slow=0, input_map={273: 'UP', 274: 'DOWN', 276: 'LEFT', 275: 'RIGHT', 13: 'WAIT', 32: 'BOMB'}, log_game=20, log_agent_wrapper=20, log_agent_code=10, grid_offset=[45, 45])

@@ -1,0 +1,7 @@
+PER: True, Target: True, Model: DUELCONVSYM, State: SMALL, LoadModel: False
+Gamma: 0.97, Learning Rate: 0.001, e: 0, e_min: 0, e_decay: -0.01
+Batch_size: 32, Batch_times: 0, Update Target every: 600, LR_decay: 0.000390625, Start_after: 1000, Train every: 4
+Random after Osc: 3, Random after Wait: 2
+PER size: 80000, PER_max: 50.0, PER_e: 2, PER_a: 0.6, PER_b: 0.4, PER_b_inc: 1.875e-05
+Rewards: [-20 -20 -20 -20   0   0   0   0   0   0   0 100   0   0   0   0   0   0], Useless: (0, 0)
+Settings(width=1000, height=600, gui=False, fps=60, update_interval=0.1, turn_based=False, n_rounds=1000, save_replay=False, make_video_from_replay=False, cols=17, rows=17, grid_size=30, crate_density=0, actions=['UP', 'DOWN', 'LEFT', 'RIGHT', 'BOMB', 'WAIT'], max_agents=4, max_steps=400, stop_if_not_training=False, bomb_power=3, bomb_timer=4, explosion_timer=2, timeout=5.0, reward_kill=5, reward_coin=1, reward_slow=-1, input_map={273: 'UP', 274: 'DOWN', 276: 'LEFT', 275: 'RIGHT', 13: 'WAIT', 32: 'BOMB'}, log_game=20, log_agent_wrapper=20, log_agent_code=10, grid_offset=[45, 45])
