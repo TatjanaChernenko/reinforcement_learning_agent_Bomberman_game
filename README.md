@@ -1,6 +1,20 @@
 # IFML-Bomberman
 
-Clone of https://github.com/ukoethe/bomberman_rl.git.
+2019, Chernenko, Tatjana (Results Evaluation; Challenges);
+Mylius, Jan-Gabriel (Model); 
+Wuest, Valentin (Training, Improvements)
+
+**Whitepaper** (approach, results) - [link](https://github.com/TatjanaChernenko/reinforcement_learning_agent_Bomberman_game/blob/main/Report.pdf) 
+
+Presenting an approach of training an agent for the multiplayer game Bomberman 
+using reinforcement learning. Roughly following the approach taken 
+in [1], we decided on using deep Q-learning [2] with a dueling 
+network architecture [3] and separate decision and target networks. 
+To improve the training process, we utilized prioritized experience replay [4]. 
+Finally, we further enhanced our model to explicitly exploit the inherent 
+symmetries of the game, the translational symmetry that is incorporated 
+by using convolutional layers in our network, and the rotational and 
+mirror symmetries that are en- forced by symmetrizing it [5].
 
 We added some minor changes we made to the environment, and our own agent.
 
@@ -53,3 +67,11 @@ https://github.com/phaetjay/ifml_project
 https://github.com/aiporre/bomberman_fml_proj
 
 https://github.com/jeremy921107/FML-RL_Bomberman
+
+
+[1] M. Hessel, J. Modayil, H. van Hasselt, T. Schaul, G. Ostrovski, W. Dabney, D. Horgan, B. Piot, M. G. Azar, and D. Silver, “Rainbow: Combining im- provements in deep reinforcement learning”, CoRR, vol. abs/1710.02298, 2017. arXiv: 1710.02298. [Online]. Available: http://arxiv.org/abs/ 1710.02298.
+[2] V. Mnih, K. Kavukcuoglu, D. Silver, A. A. Rusu, J. Veness, M. G. Belle- mare, A. Graves, M. Riedmiller, A. K. Fidjeland, G. Ostrovski, S. Pe- tersen, C. Beattie, A. Sadik, I. Antonoglou, H. King, D. Kumaran, D. Wierstra, S. Legg, and D. Hassabis, “Human-level control through deep re- inforcement learning”, Nature, vol. 518, no. 7540, pp. 529–533, Feb. 2015, issn: 00280836. [Online]. Available: http://dx.doi.org/10.1038/ nature14236.
+42
+[3] Z. Wang, T. Schaul, M. Hessel, H. Hasselt, M. Lanctot, and N. Freitas, “Dueling network architectures for deep reinforcement learning”, 2016. [Online]. Available: https://arxiv.org/pdf/1511.06581.pdf.
+[4] T. Schaul, J. Quan, I. Antonoglou, and D. Silver, “Prioritized experience replay”, CoRR, vol. abs/1511.05952, 2015. arXiv: 1511.05952. [Online]. Available: http://arxiv.org/abs/1511.05952.
+[5] S. Dieleman, J. D. Fauw, and K. Kavukcuoglu, “Exploiting cyclic symme- try in convolutional neural networks”, CoRR, vol. abs/1602.02660, 2016. arXiv: 1602.02660. [Online]. Available: http://arxiv.org/abs/1602. 02660.
